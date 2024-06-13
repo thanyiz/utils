@@ -6,7 +6,7 @@ import argparse
 
 def gen_md_file(path, file_basename):
     file_name = os.path.join(path, file_basename + ".md")
-    text = ["---\n", f"annotation-target: ./{file_basename}.md\n", "---\n"]
+    text = ["---\n", f"annotation-target: ./{file_basename}.pdf\n", "---\n"]
     with open(file_name, "w", encoding="utf-8") as f:
         for line in text:
             f.write(line)
